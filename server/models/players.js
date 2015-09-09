@@ -9,9 +9,9 @@ var Player = new Schema(
 );
 
 
-process.env.DB_HOST = 'mongodb://localhost/players';
-//using the environment to connect the variable
-mongoose.connect(process.env.DB_HOST);
+// process.env.DB_HOST = 'mongodb://localhost/players';
+// //using the environment to connect the variable
+// mongoose.connect(process.env.DB_HOST);
 
 
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://heroku_7qnkbcfj:mpqsvvh652adap0bmmqnv4okkn@ds047612.mongolab.com:47612/heroku_7qnkbcfj')
