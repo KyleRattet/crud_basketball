@@ -14,5 +14,6 @@ process.env.DB_HOST = 'mongodb://localhost/players';
 mongoose.connect(process.env.DB_HOST);
 
 
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://heroku_7qnkbcfj:mpqsvvh652adap0bmmqnv4okkn@ds047612.mongolab.com:47612/heroku_7qnkbcfj')
 //players is the collections, Player is the schema
 module.exports = mongoose.model('players', Player);
